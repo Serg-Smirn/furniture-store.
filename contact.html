@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты</title>
+  <meta name="description" content="Интернет-витрина мебельного магазина: мягкая и деревянная мебель.">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Ваш Бренд Мебели</a>
+    <button class="burger" aria-label="Открыть меню" onclick="toggleNav()">☰</button>
+    <nav id="mainnav">
+      <a href="soft.html">Мягкая мебель</a>
+      <a href="wood.html">Деревянная мебель</a>
+      <a href="office.html">Офисная мебель</a>
+      <a href="about.html">О нас</a>
+      <a href="contact.html" class="cta">Контакты</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+<section class="prose">
+  <h1>Контакты</h1>
+  <p>Оставьте заявку — мы свяжемся с вами.</p>
+
+  <form class="contact-form" method="POST" action="https://formspree.io/f/ВАШ_ID">
+    <div class="grid form-grid">
+      <label>Имя
+        <input type="text" name="name" required>
+      </label>
+      <label>Телефон
+        <input type="tel" name="phone" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Товар (подтягивается из URL)
+        <input type="text" id="productField" name="product" placeholder="Например: Диван Oslo">
+      </label>
+      <label class="full">Сообщение
+        <textarea name="message" rows="5" placeholder="Ваш вопрос…"></textarea>
+      </label>
+    </div>
+    <button class="btn" type="submit">Отправить</button>
+  </form>
+
+  <h2>Как с нами связаться</h2>
+  <p>Телефон: +44 7464 447850 · Email: premiumridetransport@gmail.com</p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Ваш Бренд Мебели. Все права защищены.</p>
+    <p><a href="contact.html">Связаться с нами</a></p>
+  </div>
+</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
